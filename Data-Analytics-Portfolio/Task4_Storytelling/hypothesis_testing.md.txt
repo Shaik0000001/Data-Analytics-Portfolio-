@@ -1,0 +1,18 @@
+# Hypothesis Testing
+
+## 🎯 Hypothesis
+UPI payments lead to higher average order value than COD.
+
+## 📊 Method
+Two-sample T-test comparing UPI and COD transactions.
+
+## 📈 Steps
+1. Separate UPI and COD transactions
+2. Calculate mean order value
+3. Perform T-test
+
+## 📉 Result
+If p-value < 0.05 → statistically significant difference.
+
+## ✅ Conclusion
+UPI users tend to spend more than COD users.
