@@ -1,0 +1,25 @@
+-- Top 5 products by revenue
+SELECT Product, SUM(Price * Quantity) AS Revenue
+FROM sales
+GROUP BY Product
+ORDER BY Revenue DESC
+LIMIT 5;
+
+-- Monthly revenue trend
+SELECT DATE_FORMAT(Order_Date, '%Y-%m') AS Month,
+       SUM(Price * Quantity) AS Revenue
+FROM sales
+GROUP BY Month
+ORDER BY Month;
+
+-- Revenue by category
+SELECT Category, SUM(Price * Quantity) AS Revenue
+FROM sales
+GROUP BY Category;
+
+-- Top customers by spending
+SELECT Customer_ID, SUM(Price * Quantity) AS Total_Spent
+FROM sales
+GROUP BY Customer_ID
+ORDER BY Total_Spent DESC
+LIMIT 5;
