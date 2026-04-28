@@ -1,0 +1,19 @@
+# Business Story
+
+## 🎯 Objective
+Analyze e-commerce data to improve customer retention and revenue.
+
+## 🔍 Problem
+Most customers purchase only once.
+
+## 📊 Analysis
+- Electronics category drives highest revenue
+- Customers prefer digital payment methods
+
+## 💡 Insight
+High-value purchases but low repeat rate.
+
+## ✅ Recommendation
+- Introduce loyalty programs
+- Offer discounts for repeat customers
+- Promote digital payment incentives
