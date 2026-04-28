@@ -1,0 +1,22 @@
+# Dashboard Description
+
+## 🎯 Objective
+To provide an interactive view of sales performance and customer behavior.
+
+## 📊 Dashboard Components
+
+1. Revenue by Category (Bar Chart)
+2. Monthly Sales Trend (Line Chart)
+3. Top Products (Table)
+4. Customer Distribution (Pie Chart)
+
+## 🔍 Filters
+- Date
+- City
+- Category
+
+## 🛠 Tool Used
+Power BI
+
+## 💡 Purpose
+Helps stakeholders identify trends, top-performing products, and customer patterns.
