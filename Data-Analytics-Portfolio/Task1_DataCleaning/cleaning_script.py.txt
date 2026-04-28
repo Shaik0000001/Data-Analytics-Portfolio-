@@ -1,0 +1,28 @@
+import pandas as pd
+
+# Load dataset
+df = pd.read_csv("ecommerce_data.csv")
+
+# Display basic info
+print("Initial Data Info:")
+print(df.info())
+
+# Remove duplicates
+df = df.drop_duplicates()
+
+# Handle missing values
+df = df.fillna(method='ffill')
+
+# Convert Order_Date to datetime
+df['Order_Date'] = pd.to_datetime(df['Order_Date'])
+
+# Create Revenue column
+df['Revenue'] = df['Price'] * df['Quantity']
+
+# Handle outliers (optional: remove very high prices)
+df = df[df['Price'] < 100000]
+
+# Save cleaned data
+df.to_csv("cleaned_data.csv", index=False)
+
+print("Data cleaning completed!")
